@@ -39,4 +39,13 @@ describe("Schema with a $ref nested inside an extended $ref", () => {
     expect(schema).to.equal(parser.schema);
     expect(schema).to.deep.equal(dereferencedSchema);
   });
+
+  it("should bundle successfully", async () => {
+    let parser = new $RefParser();
+    const schema = await parser.bundle(
+      path.rel("specs/nested-extended/nested-extended.yaml")
+    );
+    expect(schema).to.equal(parser.schema);
+    expect(schema).to.deep.equal(dereferencedSchema);
+  });
 });
