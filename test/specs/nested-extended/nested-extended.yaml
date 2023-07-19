@@ -1,0 +1,5 @@
+$ref: "referenced-root.yaml"
+objectchild:
+  $ref: "referenced-object-child.yaml"
+arraychild:
+  - $ref: "referenced-array-child.yaml"
