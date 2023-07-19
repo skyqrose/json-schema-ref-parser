@@ -11,6 +11,14 @@ module.exports = {
         $ref: "referenced-array-child.yaml",
       },
     ],
+    local: {
+      $ref: "#/$defs/local",
+    },
+    $defs: {
+      local: {
+        const: "local",
+      },
+    },
   },
 
   root: {

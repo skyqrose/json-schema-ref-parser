@@ -10,4 +10,7 @@ module.exports = {
       const: "array-child",
     },
   ],
+  local: {
+    const: "local",
+  }
 };
